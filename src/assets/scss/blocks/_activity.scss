@@ -1,0 +1,87 @@
+.activity-description {
+  h3 {
+    font-size: 24px;
+    @include pad {
+      font-size: 48px;
+    }
+    @include font-hollow-effect;
+  }
+
+  h4 {
+    font-size: 18px;
+    @include pc-screen {
+      font-size: 26px;
+    }
+  }
+
+  .rightside {
+    width: 15%;
+    p {
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      -webkit-text-stroke: 1px #fff;
+      -webkit-text-fill-color: transparent;
+      font-size: 18px;
+      @include pad {
+        font-size: 28px;
+      }
+
+      @include pc-screen {
+        font-size: 32px;
+      }
+    }
+  }
+
+  .leftside {
+    width: 75%;
+    font-size: 14px;
+    @include pc-screen {
+      font-size: 18px;
+    }
+  }
+
+  .start-time {
+    .pic {
+      width: 100%;
+      @include pc-screen {
+        width: 35%;
+      }
+      img {
+        flex: 1;
+      }
+    }
+    .group {
+      width: 100%;
+      @include pc-screen {
+        width: 65%;
+      }
+      img {
+        width: 8px;
+        height: 29px;
+        @include pc-screen {
+          width: 20px;
+          height: 80px;
+        }
+      }
+      h4 {
+        font-size: 10px;
+        @include pc-screen {
+          font-size: 26px;
+        }
+      }
+      p {
+        font-size: 10px;
+        @include pc-screen {
+          font-size: 26px;
+        }
+      }
+    }
+
+    .ui-frontend {
+      font-size: 7px;
+      @include pc-screen {
+        font-size: 20px;
+      }
+    }
+  }
+}

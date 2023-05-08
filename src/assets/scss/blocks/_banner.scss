@@ -1,0 +1,249 @@
+.banner-item {
+  outline: 1.35px solid #fff;
+}
+
+.banner-1 {
+  width: 30%;
+}
+
+.banner-2 {
+  width: 70%;
+}
+
+.banner-3 {
+  width: 22%;
+}
+
+.banner-4 {
+  width: 62%;
+}
+
+.banner-5 {
+  width: 16%;
+}
+
+.banner-6,
+.banner-7,
+.banner-8 {
+  width: 33.33333%;
+}
+
+.banner-9 {
+  width: 100%;
+}
+
+.banner-4 {
+  .hexschool {
+    outline: 1px solid #fff;
+    width: 70%;
+  }
+}
+
+.banner-4-bottom {
+  .pic {
+    outline: 1px solid #fff;
+    width: 30%;
+  }
+
+  .gear {
+    width: 15px;
+    height: 15px;
+    @include pad {
+      width: 28px;
+      height: 28px;
+    }
+    @include pc-screen {
+      width: 52px;
+      height: 52px;
+    }
+  }
+
+  .arrow-right {
+    width: 35px;
+    height: 10px;
+    @include pad {
+      width: 70px;
+      height: 20px;
+    }
+    @include pc-screen {
+      width: 128px;
+      height: 35px;
+    }
+  }
+}
+
+.banner-4 > h2 {
+  font-size: 25px;
+
+  @include mobile-lg {
+    font-size: 35px;
+  }
+
+  @include pad {
+    font-size: 50px;
+  }
+
+  @include pc-screen {
+    font-size: 92px;
+  }
+}
+
+.banner-4-bottom {
+  .hexschool {
+    h2 {
+      font-size: 10px;
+      @include mobile-lg {
+        font-size: 20px;
+      }
+      @include pc-screen {
+        font-size: 38px;
+      }
+    }
+  }
+}
+
+.eye {
+  width: 62px;
+  height: 62px;
+  right: -8px;
+  bottom: -50px;
+  animation: eye-move 1.5s linear infinite;
+  @include pad {
+    width: 123px;
+    height: 123px;
+    bottom: -65px;
+  }
+  @include pc-screen {
+    width: 227px;
+    height: 227px;
+    right: -24px;
+    bottom: -100px;
+  }
+}
+
+@keyframes eye-move {
+  0% {
+    transform: translateY(-30px);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+
+  100% {
+    transform: translateY(-30px);
+  }
+}
+
+.gear {
+  animation: gear-rotate 4s linear infinite;
+}
+
+@keyframes gear-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.banner-area {
+  .total,
+  .person,
+  .team {
+    @include mobile-lg {
+      flex-wrap: wrap;
+    }
+
+    @include pad {
+      flex-wrap: nowrap;
+    }
+
+    font-size: 10px;
+    @include mobile-lg {
+      font-size: 20px;
+    }
+
+    @include pc-screen {
+      font-size: 32px;
+    }
+    strong {
+      font-size: 14px;
+      @include mobile-lg {
+        font-size: 28px;
+      }
+      @include pc-screen {
+        font-size: 52px;
+      }
+    }
+  }
+
+  .signup-time {
+    overflow-x: auto;
+    span:first-child {
+      font-size: 10px;
+      @include mobile-lg {
+        font-size: 20px;
+      }
+      @include pc-screen {
+        font-size: 32px;
+      }
+    }
+    span {
+      font-size: 8px;
+      @include mobile-lg {
+        font-size: 16px;
+      }
+      @include pc-screen {
+        font-size: 20px;
+      }
+    }
+    p {
+      font-size: 12px;
+      @include mobile-lg {
+        font-size: 24px;
+      }
+      @include pc-screen {
+        font-size: 36px;
+      }
+    }
+  }
+}
+
+.banner-worry {
+  h3 {
+    font-size: 24px;
+    margin-bottom: 66px;
+    @include pad {
+      font-size: 48px;
+    }
+    @include pc-screen {
+      margin-bottom: 130px;
+    }
+    @include font-hollow-effect;
+  }
+
+  img {
+    width: 214px;
+    @include pad {
+      width: 238px;
+    }
+    @include pc-screen {
+      width: 462px;
+    }
+  }
+
+  .text {
+    p {
+      font-size: 24px;
+      @include pad {
+        font-size: 36px;
+      }
+      @include pc-screen {
+        font-size: 58px;
+      }
+    }
+  }
+}

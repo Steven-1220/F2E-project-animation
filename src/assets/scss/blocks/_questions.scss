@@ -1,0 +1,96 @@
+.questions {
+  h3 {
+    font-size: 24px;
+    @include font-hollow-effect;
+    @include pad {
+      font-size: 48px;
+    }
+  }
+  .side-img {
+    display: none;
+    left: 10%;
+    @include pc-screen {
+      display: block;
+    }
+  }
+  .category {
+    li:first-child {
+      @include mobile-lg {
+        width: 35%;
+      }
+      img {
+        width: 34px;
+        @include pc-screen {
+          width: 80px;
+        }
+      }
+    }
+    li:nth-child(2) {
+      background-color: $gray-500;
+      @include mobile-lg {
+        width: 25%;
+      }
+      img {
+        width: 17px;
+        @include pc-screen {
+          width: 40px;
+        }
+      }
+    }
+    li:nth-child(3) {
+      background-color: $gray-500;
+      @include mobile-lg {
+        width: 25%;
+      }
+      img {
+        width: 17px;
+        @include pc-screen {
+          width: 40px;
+        }
+      }
+    }
+    li:last-child {
+      background-color: $gray-500;
+      img {
+        width: 17px;
+        @include pc-screen {
+          width: 40px;
+        }
+      }
+    }
+  }
+
+  .cooperation {
+    h4 {
+      font-size: 34px;
+      @include pc-screen {
+        font-size: 36px;
+      }
+    }
+    h5 {
+      font-size: 24px;
+      @include pc-screen {
+        font-size: 32px;
+      }
+    }
+    button.register {
+      color: $dark;
+      background-color: $primary;
+      font-size: 30px;
+      @include pc-screen {
+        font-size: 36px;
+      }
+      &:hover {
+        color: $primary;
+        background-color: $dark;
+      }
+    }
+  }
+}
+
+footer p {
+  font-size: 12px;
+  @include pc-screen {
+    font-size: 16px;
+  }
+}

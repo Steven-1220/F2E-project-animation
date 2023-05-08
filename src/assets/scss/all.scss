@@ -1,0 +1,24 @@
+@import '~bootstrap/scss/functions';
+@import './helpers/variables';
+
+@import '~bootstrap/scss/maps';
+@import '~bootstrap/scss/mixins';
+
+@import './helpers/utilities';
+
+@import '~bootstrap/scss/bootstrap';
+
+@import './rwd';
+@import './base';
+
+// components
+@import './blocks/nav';
+@import './blocks/banner';
+@import './blocks/cooperation';
+@import './blocks/topics';
+@import './blocks/activity';
+@import './blocks/process';
+@import './blocks/competition';
+@import './blocks/sponsor';
+@import './blocks/master';
+@import './blocks/questions';

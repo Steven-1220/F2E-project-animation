@@ -1,0 +1,36 @@
+nav ul {
+  .btn-register {
+    background-color: $primary;
+  }
+  .nav-btn {
+    &:hover {
+      background-color: $secondary;
+    }
+  }
+
+  @include pc-screen {
+    .deco-underline {
+      position: relative;
+      &::after {
+        content: '';
+        position: absolute;
+        display: block;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 0%;
+        height: 4px;
+        background-color: $secondary;
+        transition: width 0.2s 0.2s;
+      }
+    }
+
+    a:hover {
+      &.deco-underline {
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
