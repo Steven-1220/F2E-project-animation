@@ -7,9 +7,9 @@ import { Collapse } from 'bootstrap/js/dist/collapse';
 const navbarContent = document.querySelector('.navbarContent');
 const navbarBtn = document.querySelector('.navbar-btn');
 
-const bsHamburgerContent = new Collapse(navbarContent, {
-  toggle: false,
-});
+// const bsHamburgerContent = new Collapse(navbarContent, {
+//   toggle: false,
+// });
 
 if (module.hot) {
   module.hot.accept();
