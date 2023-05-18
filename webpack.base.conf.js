@@ -33,6 +33,11 @@ module.exports = {
     new CleanWebpackPlugin(),
   ],
 
+  // 避免檔案更新時跳出錯誤訊息
+  optimization: {
+    runtimeChunk: 'single',
+  },
+
   performance: {
     hints: false,
   },
