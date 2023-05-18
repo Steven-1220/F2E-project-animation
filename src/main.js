@@ -2,10 +2,10 @@ import './assets/scss/all.scss';
 
 import 'bootstrap/dist/js/bootstrap.esm.js';
 
-import { Collapse } from 'bootstrap/js/dist/collapse';
+// import { Collapse } from 'bootstrap/js/dist/collapse';
 
-const navbarContent = document.querySelector('.navbarContent');
-const navbarBtn = document.querySelector('.navbar-btn');
+// const navbarContent = document.querySelector('.navbarContent');
+// const navbarBtn = document.querySelector('.navbar-btn');
 
 // const bsHamburgerContent = new Collapse(navbarContent, {
 //   toggle: false,

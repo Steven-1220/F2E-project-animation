@@ -16,8 +16,12 @@
   }
 
   .card {
+    max-width: 228px;
     @include pad {
-      min-width: 285px;
+      max-width: 285px;
+    }
+    @include pc-screen {
+      max-width: 400px;
     }
   }
 
@@ -78,30 +82,24 @@
     opacity: 0;
   }
 
-  .level-detail {
-    img {
-      display: inline-block;
-      width: 45px;
-      transition: width 0.5s;
-    }
-  }
-
   .card {
     transform: translateY(0px);
     transition: all 0.5s;
 
-    &:hover {
-      transform: translateY(-20px);
-      .week-before {
-        opacity: 0;
-      }
-      .week-after {
-        animation: pop-up-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-        opacity: 1;
-      }
-      .level-detail {
-        img {
-          width: 75px;
+    @include pc-screen {
+      &:hover {
+        transform: translateY(-20px);
+        .week-before {
+          opacity: 0;
+        }
+        .week-after {
+          animation: pop-up-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          opacity: 1;
+        }
+        .level-detail {
+          img {
+            width: 75px;
+          }
         }
       }
     }
@@ -119,6 +117,18 @@
   }
 
   .sponsor {
+    img {
+      width: 28px;
+      height: 28px;
+      @include pad {
+        width: 36px;
+        height: 36px;
+      }
+      @include pc-screen {
+        width: 51px;
+        height: 51px;
+      }
+    }
     p {
       font-size: 9px;
       @include pad {
@@ -137,6 +147,20 @@
         @include pc-screen {
           font-size: 14px;
         }
+      }
+    }
+  }
+
+  .level-detail {
+    img {
+      display: inline-block;
+      width: 27px;
+      transition: width 0.5s;
+      @include pad {
+        width: 34px;
+      }
+      @include pc-screen {
+        width: 48px;
       }
     }
   }

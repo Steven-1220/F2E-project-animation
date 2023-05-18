@@ -11,15 +11,33 @@
 }
 
 .banner-3 {
-  width: 22%;
+  width: 25.5%;
+  @include pad {
+    width: 25%;
+  }
+  @include pc-screen {
+    width: 22%;
+  }
 }
 
 .banner-4 {
-  width: 62%;
+  width: 56.5%;
+  @include pad {
+    width: 56%;
+  }
+  @include pc-screen {
+    width: 62%;
+  }
 }
 
 .banner-5 {
-  width: 16%;
+  width: 20%;
+  @include pad {
+    width: 19%;
+  }
+  @include pc-screen {
+    width: 16%;
+  }
 }
 
 .banner-6,
@@ -73,7 +91,7 @@
 }
 
 .banner-4 > h2 {
-  font-size: 25px;
+  font-size: 20px;
 
   @include mobile-lg {
     font-size: 35px;
@@ -150,6 +168,15 @@
 }
 
 .banner-area {
+  &:nth-child(2) {
+    max-height: 160px;
+    @include pad {
+      max-height: 210px;
+    }
+    @include pc-screen {
+      max-height: 230px;
+    }
+  }
   .total,
   .person,
   .team {
