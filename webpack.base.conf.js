@@ -29,6 +29,7 @@ module.exports = {
       template: path.resolve(__dirname, './src/template/index.html'),
       filename: 'index.html',
       title: 'The F2E 活動網站',
+      favicon: './src/assets/images/favicon-32x32.png',
     }),
     new CleanWebpackPlugin(),
   ],
