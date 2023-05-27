@@ -24,31 +24,6 @@ gsap.to('.loop', {
 
 const topicMainCard = document.querySelector('.main-card-content');
 
-// ScrollTrigger.create({
-//   trigger: topicMainCard,
-//   markers: true,
-//   end: 'top 12%',
-//   scrub: true,
-//   onEnter: function () {
-//     animate(topicMainCard);
-//   },
-//   onEnterBack: function () {
-//     animate(topicMainCard);
-//   },
-// });
-
-// function animate(el) {
-//   gsap.set(topicMainCard, { xPercent: 85 });
-//   const t1 = gsap.timeline();
-//   t1.to(el, {
-//     xPercent: 40,
-//     duration: 1,
-//   }).to(el, {
-//     xPercent: 0,
-//     duration: 1,
-//   });
-// }
-
 // 三大主題區塊由右向左分段移入
 gsap.set(topicMainCard, { xPercent: 85 });
 let time = gsap.timeline({
