@@ -15,6 +15,15 @@
     }
   }
 
+  .main-card-content {
+    .card {
+      aspect-ratio: 0.53;
+      @include pc-screen {
+        aspect-ratio: 0.69;
+      }
+    }
+  }
+
   .card {
     max-width: 228px;
     @include pad {
@@ -64,10 +73,6 @@
     &:hover {
       color: $dark;
     }
-  }
-
-  .fix-height {
-    height: 320px;
   }
 
   .week-before {
