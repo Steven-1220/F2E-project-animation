@@ -16,10 +16,10 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
       <div class="container py-3">
         <a class="navbar-brand fs-1 font-audi" href="#">The F2E</a>
-        <button class="navbar-toggler navbar-btn" type="button">
+        <button class="navbar-toggler navbar-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse navbarContent">
+        <div class="collapse navbar-collapse" id="navbar-content">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
             <li class="nav-item mx-4">
               <a class="nav-link fw-bold fs-5 deco-underline" href="#"
@@ -84,15 +84,13 @@
           <div class="banner-item banner-3">
             <img src="../assets/images/KV-7.svg" class="img-fluid" alt="" />
           </div>
-          <div class="banner-item banner-4 d-flex flex-column text-center">
-            <h2
-              class="d-flex text-white text-nowrap mt-5 ps-4 ps-xl-2 px-xxl-5"
-            >
-              <p class="fw-bold">
-                互動式 <strong class="typing"></strong
-                ><span class="cursor">|</span>
-              </p>
-            </h2>
+          <div class="banner-item banner-4 d-flex flex-column">
+            <div class="d-flex  align-items-center h-100">
+              <h2 class="text-white text-nowrap mx-auto mb-0">
+                <strong>互動式</strong>
+                <strong class="typing position-relative"></strong><span class="cursor">|</span>
+              </h2>
+            </div>
             <div class="banner-4-bottom d-flex mt-auto">
               <div class="pic d-flex justify-content-center align-items-center">
                 <img
@@ -329,183 +327,6 @@
           </p>
         </div>
 
-        <!-- <div class="row main-card-content">
-          <div class="col-md-4 col-xl-4 mb-5 gx-15 gx-md-10">
-            <div class="card bg-secondary border-0 overflow-hidden">
-              <div
-                class="header w-40 bg-white rounded-top border border-4 border-primary border-bottom-0 text-center"
-              >
-                <span>Week </span
-                ><strong class="ms-2 align-baseline">01</strong>
-              </div>
-              <div
-                class="card-body bg-primary upper-right position-relative fix-height"
-              >
-                <h4 class="card-title fw-bold">
-                  The F2E <br />
-                  活動網站設計
-                </h4>
-                <button
-                  type="button"
-                  class="btn btn-outline-dark bg-white rounded-pill fw-bold border border-2 border-dark"
-                >
-                  # 視差滾動
-                </button>
-                <img
-                  src="../assets/images/week1-image-1.svg"
-                  class="img-fluid week-before"
-                  alt=""
-                />
-                <img
-                  src="../assets/images/week1-image-2.svg"
-                  class="img-fluid week-after"
-                  alt=""
-                />
-              </div>
-              <div
-                class="card-body bg-primary rounded-bottom d-flex align-items-end justify-content-between"
-              >
-                <div class="sponsor d-flex align-items-end">
-                  <img
-                    src="../assets/images/week1-logo.svg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <p class="text-dark mb-0">
-                    <span>贊助商</span> <br />
-                    <strong>版塊設計</strong>
-                  </p>
-                </div>
-                <div class="level-detail">
-                  <a
-                    href="#"
-                    class="link-dark text-decoration-none deco-line d-inline-block position-relative fw-bold"
-                    >關卡細節</a
-                  >
-                  <img src="../assets/images/arrow-right.svg" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 col-xl-4 mb-5 gx-15 gx-md-10">
-            <div class="card bg-secondary border-0 overflow-hidden">
-              <div
-                class="header w-40 bg-white rounded-top border border-4 border-primary border-bottom-0 text-center"
-              >
-                <span>Week </span
-                ><strong class="ms-2 align-baseline">02</strong>
-              </div>
-              <div
-                class="card-body bg-primary upper-right position-relative fix-height"
-              >
-                <h4 class="card-title fw-bold">
-                  今晚， <br />
-                  我想來點點簽
-                </h4>
-                <button
-                  type="button"
-                  class="btn btn-outline-dark bg-white rounded-pill fw-bold border border-2 border-dark"
-                >
-                  # Canvas
-                </button>
-                <img
-                  src="../assets/images/week2-image-1.svg"
-                  class="img-fluid week-before"
-                  alt=""
-                />
-                <img
-                  src="../assets/images/week2-image-2.svg"
-                  class="img-fluid week-after"
-                  alt=""
-                />
-              </div>
-              <div
-                class="card-body bg-primary rounded-bottom d-flex align-items-end justify-content-between"
-              >
-                <div class="sponsor d-flex align-items-end">
-                  <img
-                    src="../assets/images/week2-logo.svg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <p class="text-dark mb-0">
-                    <span>贊助商</span> <br />
-                    <strong>凱鈿行動科技</strong>
-                  </p>
-                </div>
-                <div class="level-detail">
-                  <a
-                    href="#"
-                    class="link-dark text-decoration-none deco-line d-inline-block position-relative fw-bold"
-                    >關卡細節</a
-                  >
-                  <img src="../assets/images/arrow-right.svg" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 col-xl-4 mb-5 gx-15 gx-md-10">
-            <div class="card bg-secondary border-0 overflow-hidden">
-              <div
-                class="header w-40 bg-white rounded-top border border-4 border-primary border-bottom-0 text-center"
-              >
-                <span>Week </span
-                ><strong class="ms-2 align-baseline">03</strong>
-              </div>
-              <div
-                class="card-body bg-primary upper-right position-relative fix-height"
-              >
-                <h4 class="card-title fw-bold">
-                  Scrum <br />
-                  新手村
-                </h4>
-                <button
-                  type="button"
-                  class="btn btn-outline-dark bg-white rounded-pill fw-bold border border-2 border-dark"
-                >
-                  # JS draggable
-                </button>
-                <img
-                  src="../assets/images/week3-image-1.svg"
-                  class="img-fluid week-before"
-                  alt=""
-                />
-                <img
-                  src="../assets/images/week3-image-2.svg"
-                  class="img-fluid week-after"
-                  alt=""
-                />
-              </div>
-              <div
-                class="card-body bg-primary rounded-bottom d-flex align-items-end justify-content-between"
-              >
-                <div class="sponsor d-flex align-items-end">
-                  <img
-                    src="../assets/images/week3-logo.svg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <p class="text-dark mb-0">
-                    <span>贊助商</span> <br />
-                    <strong>版塊設計</strong>
-                  </p>
-                </div>
-                <div class="level-detail">
-                  <a
-                    href="#"
-                    class="link-dark text-decoration-none deco-line d-inline-block position-relative fw-bold"
-                    >關卡細節</a
-                  >
-                  <img src="../assets/images/arrow-right.svg" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
-        <!-- 測試 -->
         <div
           class="row row-cols-1 row-cols-md-3 g-md-8 g-lg-15 main-card-content"
         >
@@ -1673,63 +1494,64 @@
           </div>
         </div>
         <div class="row justify-content-center">
-          <div class="col-10 col-md-12">
+          <div class="col-10 col-md-12 w-sm-100">
             <ul
               class="category list-group list-group-horizontal-sm justify-content-center text-nowrap mt-3"
             >
               <li
-                class="clist-group-item d-flex align-items-center justify-content-center bg-dark text-primary rounded-0 w-100"
+                class="list-group-item d-flex align-items-center justify-content-center rounded-0 bg-dark position-relative"
               >
                 <img
                   src="../assets/images/Vector 9.svg"
                   class="img-fluid"
                   alt=""
                 />
-                <p class="mb-0 fw-bold ms-3 ms-xl-6">
+                <button class="btn mb-0 fw-bold ms-3 ms-xl-6 btn-question text-primary border-0 stretched-link" data-name="common">
                   常見<br class="d-none d-sm-block d-md-none" />問題
-                </p>
+                </button>
               </li>
               <li
-                class="list-group-item d-flex align-items-center justify-content-center rounded-0 w-100"
+                class="list-group-item d-flex align-items-center justify-content-center rounded-0 position-relative"
               >
                 <img
                   src="../assets/images/Vector 9.svg"
                   class="img-fluid"
                   alt=""
                 />
-                <p class="mb-0 fw-bold ms-3 ms-xl-6">UI 設計師</p>
+                <button class="btn mb-0 fw-bold ms-3 ms-xl-6 btn-question border-0 stretched-link" data-name="ui">UI 設計師</button>
               </li>
               <li
-                class="list-group-item d-flex align-items-center justify-content-center rounded-0 w-100"
+                class="list-group-item d-flex align-items-center justify-content-center rounded-0 position-relative"
               >
                 <img
                   src="../assets/images/Vector 9.svg"
                   class="img-fluid"
                   alt=""
                 />
-                <p class="mb-0 fw-bold ms-3 ms-xl-6">前端工程師</p>
+                <button class="btn mb-0 fw-bold ms-3 ms-xl-6 btn-question border-0 stretched-link" data-name="front-end">前端工程師</button>
               </li>
               <li
-                class="list-group-item d-flex align-items-center justify-content-center rounded-0 w-100"
+                class="list-group-item d-flex align-items-center justify-content-center rounded-0 position-relative"
               >
                 <img
                   src="../assets/images/Vector 9.svg"
                   class="img-fluid"
                   alt=""
                 />
-                <p class="mb-0 fw-bold ms-3 ms-xl-6">團體組</p>
+                <button class="btn mb-0 fw-bold ms-3 ms-xl-6 btn-question border-0 stretched-link" data-name="team">團體組</button>
               </li>
             </ul>
           </div>
-          <div class="col-10 col-md-12">
+          <!-- 常見問題手風琴 -->
+          <div class="col-10 col-md-12 common-question-area w-sm-100">
             <div
               class="accordion accordion-flush"
               id="accordion-common-questions"
             >
               <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
+                <h2 class="accordion-header">
                   <button
-                    class="accordion-button collapsed fw-bold btn-accordion"
+                    class="accordion-button collapsed fw-bold"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#common-questions-1"
@@ -1749,9 +1571,9 @@
               </div>
 
               <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTwo">
+                <h2 class="accordion-header">
                   <button
-                    class="accordion-button collapsed fw-bold btn-accordion"
+                    class="accordion-button collapsed fw-bold"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#common-questions-2"
@@ -1770,13 +1592,13 @@
                 </div>
               </div>
 
-              <!-- <div class="accordion-item">
-                <h2 class="accordion-header" id="headingThree">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
                   <button
                     class="accordion-button fw-bold collapsed"
                     type="button"
                     data-bs-toggle="collapse"
-                    data-bs-target="#collapse-03"
+                    data-bs-target="#common-questions-3"
                     aria-expanded="false"
                     aria-controls="collapseThree"
                   >
@@ -1784,10 +1606,10 @@
                   </button>
                 </h2>
                 <div
-                  id="collapse-03"
+                  id="common-questions-3"
                   class="accordion-collapse collapse"
                   aria-labelledby="headingThree"
-                  data-bs-parent="#accordion"
+                  data-bs-parent="#accordion-common-questions"
                 >
                   <div class="accordion-body">
                     A：主辦單位其實不會去審核大家的程式碼，只要你認為當週你有針對主題有做到一定程度，就算是半完成品也請大方投稿，不用擔心。
@@ -1795,12 +1617,12 @@
                 </div>
               </div>
               <div class="accordion-item">
-                <h2 class="accordion-header" id="headingThree">
+                <h2 class="accordion-header">
                   <button
                     class="accordion-button fw-bold collapsed"
                     type="button"
                     data-bs-toggle="collapse"
-                    data-bs-target="#collapse-04"
+                    data-bs-target="#common-questions-4"
                     aria-expanded="false"
                     aria-controls="collapseThree"
                   >
@@ -1808,16 +1630,322 @@
                   </button>
                 </h2>
                 <div
-                  id="collapse-04"
+                  id="common-questions-4"
                   class="accordion-collapse collapse"
                   aria-labelledby="headingThree"
-                  data-bs-parent="#accordion"
+                  data-bs-parent="#accordion-common-questions"
                 >
                   <div class="accordion-body">
                     A：可以，有投稿表示你還會持續努力在這次活動上。
                   </div>
                 </div>
-              </div> -->
+              </div>
+            </div>
+          </div>
+
+          <!-- UI 設計師手風琴 -->
+          <div class="col-10 col-md-12 ui-question-area w-sm-100">
+            <div
+              class="accordion accordion-flush"
+              id="accordion-ui-questions"
+            >
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed fw-bold"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#ui-questions-1"
+                  >
+                  Q：到時投稿到平台是提供什麼呢？我也不像是工程師可以有 CODEPEN 上傳。
+                  </button>
+                </h2>
+                <div
+                  id="ui-questions-1"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordion-ui-questions"
+                >
+                  <div class="accordion-body">
+                    A：其中投稿的欄位裡面會有一個「線上標示文件」，像是 Adobe XD 便有提供該服務(範例連結)，屆時提供標示文件後，便可讓其他前端工程師採用你的設計稿來開發。
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed fw-bold"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#ui-questions-2"
+                  >
+                  Q：投稿上去的 UI 作品，我知道需要授權讓前端工程師組做成 Web 介面，那授權部分可以設定嗎？
+                  </button>
+                </h2>
+                <div
+                  id="ui-questions-2"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordion-ui-questions"
+                >
+                  <div class="accordion-body">
+                    A：會有的，屆時平台投稿流程上，會讓您的作品可以選擇 CC0、CC BY 等授權，以保障您的 UI 作品權益。
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button fw-bold collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#ui-questions-3"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                  Q：一定要上傳「線上標示文件」嗎？
+                  </button>
+                </h2>
+                <div
+                  id="ui-questions-3"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordion-ui-questions"
+                >
+                  <div class="accordion-body">
+                    A：是的，因為這樣才有辦法讓其他前端工程師，能採用您的設計稿，將您的設計稿實作出網頁格式。如果您是使用
+                    Sketch，也可使用 Sketch Measure 編譯出來後，壓縮 ZIP 到雲端空間 (Dropbox、Google Drive)。
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button fw-bold collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#ui-questions-4"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                  Q：不能使用 PS、Illustrator 設計嗎？
+                  </button>
+                </h2>
+                <div
+                  id="ui-questions-4"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordion-ui-questions"
+                >
+                  <div class="accordion-body">
+                    A：只要您能找到 PS 或 Illustrator 產出線上標示文件的方式就可以，因為前端工程師大部分皆比較少具有繪圖軟體，所以
+                    用線上標示文件將會減少許工程師協作上的溝通時間。
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--前端工程師手風琴 -->
+          <div class="col-10 col-md-12 frontend-question-area w-sm-100">
+            <div
+              class="accordion accordion-flush"
+              id="accordion-frontend-questions"
+            >
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed fw-bold"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#frontend-questions-1"
+                  >
+                  Q：我可以不依照設計稿，自己做版面嗎？因為我想多練習 JS / 後端
+                  </button>
+                </h2>
+                <div
+                  id="frontend-questions-1"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordion-frontend-questions"
+                >
+                  <div class="accordion-body">
+                    A：可以，The F2E 活動是希望讓大家人人有功練，所以依照你自己想投入的方向練功即可。CSS 也可以用框架，例如 Bootstrap。
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed fw-bold"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#frontend-questions-2"
+                  >
+                  Q：前端介面一定要長得一模一樣嗎？
+                  </button>
+                </h2>
+                <div
+                  id="frontend-questions-2"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordion-frontend-questions"
+                >
+                  <div class="accordion-body">
+                    A：不用，依照自己的想法來開發也可以
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button fw-bold collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#frontend-questions-3"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                  Q：有現成的網頁靜態頁面嗎？我想只練習 JS / 後端就好
+                  </button>
+                </h2>
+                <div
+                  id="frontend-questions-3"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordion-frontend-questions"
+                >
+                  <div class="accordion-body">
+                    A：這段我們不會提供，畢竟每個人習慣的 Coding style 又不一樣，產出的 HTML、CSS 並非是自己習慣的 Layout 反而會
+                    更花時間。
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button fw-bold collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#frontend-questions-4"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                  Q：那我只想要練習 JS，HTML/CSS 我用陽春版，不依照設計稿開發可以嗎？
+                  </button>
+                </h2>
+                <div
+                  id="frontend-questions-4"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordion-frontend-questions"
+                >
+                  <div class="accordion-body">
+                    A：可以，你可以當做我們就是出一個主題，你依照那主題當作參考方向來開發即可。
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--團體組手風琴 -->
+          <div class="col-10 col-md-12 team-question-area w-sm-100">
+            <div
+              class="accordion accordion-flush"
+              id="accordion-team-questions"
+            >
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed fw-bold"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#team-questions-1"
+                  >
+                  Q：請問團體組最多幾人？
+                  </button>
+                </h2>
+                <div
+                  id="team-questions-1"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordion-team-questions"
+                >
+                  <div class="accordion-body">
+                    A：最多 4 人，投稿作品時請派一位組長來投稿即可。
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed fw-bold"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#team-questions-2"
+                  >
+                  Q：我對獎項有興趣，可以只做第三道主題就好嗎？
+                  </button>
+                </h2>
+                <div
+                  id="team-questions-2"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordion-team-questions"
+                >
+                  <div class="accordion-body">
+                    A：可以，您可以在這場活動中，和組員一起打磨第三道主題，不用三個主題都做。
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button fw-bold collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#team-questions-3"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                  Q：那團體組第三道主題最晚投稿期限為？
+                  </button>
+                </h2>
+                <div
+                  id="team-questions-3"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordion-team-questions"
+                >
+                  <div class="accordion-body">
+                    A：團體組投稿第三週 UI 最晚投稿時間為 11/21(一) 中午 12 點，前端最晚投稿期限為 11/28(一) 中午 12 點。
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button fw-bold collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#team-questions-4"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                  Q：團體組的 UI 設計稿，可以讓『個人組-前端工程師』組別採用嗎？
+                  </button>
+                </h2>
+                <div
+                  id="team-questions-4"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordion-team-questions"
+                >
+                  <div class="accordion-body">
+                    A：不能，預設是不能讓『個人組-前端工程師』採用。
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

@@ -1,15 +1,54 @@
 import './assets/scss/all.scss';
-
 import 'bootstrap/dist/js/bootstrap.esm.js';
 
-// import { Collapse } from 'bootstrap/js/dist/collapse';
+const categoryBtn = [...document.querySelectorAll('.category .btn-question')]
+const commonQuestionArea = document.querySelector('.common-question-area');
+const uiQuestionArea = document.querySelector('.ui-question-area');
+const frontendQuestionArea = document.querySelector('.frontend-question-area');
+const teamQuestionArea = document.querySelector('.team-question-area');
 
-// const navbarContent = document.querySelector('.navbarContent');
-// const navbarBtn = document.querySelector('.navbar-btn');
 
-// const bsHamburgerContent = new Collapse(navbarContent, {
-//   toggle: false,
-// });
+categoryBtn.forEach( btn =>{
+  btn.addEventListener('click', (e)=>{
+    categoryBtn.forEach(item =>{
+      item.classList.remove('text-primary')
+      item.parentElement.classList.remove('bg-dark')
+    })
+
+    e.target.classList.add('text-primary');
+    e.target.parentElement.classList.add('bg-dark');
+
+    if(e.target.dataset.name == 'common'){
+      hideAccordion();
+      commonQuestionArea.style.display = 'block';
+    } else if (e.target.dataset.name == 'ui') {
+      hideAccordion();
+      uiQuestionArea.style.display = 'block';
+    } else if (e.target.dataset.name == 'front-end'){
+      hideAccordion();
+      frontendQuestionArea.style.display = 'block';
+    } else if (e.target.dataset.name == 'team') {
+      hideAccordion();
+      teamQuestionArea.style.display = 'block';
+    }
+  })
+})
+
+function initAccordion(){
+  uiQuestionArea.style.display = 'none';
+  frontendQuestionArea.style.display = 'none';
+  teamQuestionArea.style.display = 'none';
+}
+
+initAccordion();
+
+function hideAccordion() {
+  commonQuestionArea.style.display = 'none';
+  uiQuestionArea.style.display = 'none';
+  frontendQuestionArea.style.display = 'none';
+  teamQuestionArea.style.display = 'none';
+}
+
 
 if (module.hot) {
   module.hot.accept();

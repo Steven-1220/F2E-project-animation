@@ -2,6 +2,7 @@
   outline: 1.35px solid #fff;
 }
 
+
 .banner-1 {
   width: 30%;
 }
@@ -11,7 +12,7 @@
 }
 
 .banner-3 {
-  width: 25.5%;
+  width: 25%;
   @include pad {
     width: 25%;
   }
@@ -21,12 +22,17 @@
 }
 
 .banner-4 {
-  width: 56.5%;
+  width: 57%;
   @include pad {
     width: 56%;
   }
   @include pc-screen {
     width: 62%;
+  }
+  .typing {
+    -webkit-text-stroke: 1px #fff;
+    -webkit-text-fill-color: transparent;
+    z-index: 1;
   }
 }
 
@@ -37,6 +43,14 @@
   }
   @include pc-screen {
     width: 16%;
+  }
+}
+
+.banner-3, .banner-5 {
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
 
@@ -90,7 +104,7 @@
   }
 }
 
-.banner-4 > h2 {
+.banner-4 h2:nth-child(1) {
   font-size: 20px;
 
   @include mobile-lg {
@@ -98,11 +112,11 @@
   }
 
   @include pad {
-    font-size: 50px;
+    font-size: 45px;
   }
 
   @include pc-screen {
-    font-size: 92px;
+    font-size: 90px;
   }
 }
 
