@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --config webpack.prod.conf.js",
     "dev": "webpack serve --config webpack.dev.conf.js",
-    "deploy": "webpack --mode production"
+    "deploy": "webpack --config webpack.prod.conf.js && gh-pages -d dist"
   },
   "author": "",
   "license": "ISC",
@@ -20,6 +20,7 @@
   "devDependencies": {
     "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^6.7.3",
+    "gh-pages": "^5.0.0",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.7.5",
     "node-sass": "^4.14.1",
