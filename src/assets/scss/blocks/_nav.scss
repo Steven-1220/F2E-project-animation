@@ -1,13 +1,18 @@
 nav ul {
-  .btn-register {
-    background-color: $primary;
-  }
   .nav-btn {
     &:hover {
       background-color: $secondary;
     }
+    &:active {
+      background-color:  $secondary;
+    }
   }
-
+  .register-btn {
+    background-color: $primary;
+    &:active {
+      background-color: $secondary;
+    }
+  }
   @include pc-screen {
     .deco-underline {
       position: relative;
