@@ -49,7 +49,7 @@
             <li class="d-flex justify-content-center my-5 my-lg-0">
               <a
                 href="#"
-                class="w-100 text-nowrap text-decoration-none btn link-dark border border-dark rounded-0 fw-bold fs-5 px-3 me-2 btn-register nav-btn"
+                class="w-100 text-nowrap text-decoration-none btn link-dark border border-dark rounded-0 fw-bold fs-5 px-3 me-2 register-btn nav-btn"
                 >註冊報名</a
               >
               <a
@@ -173,7 +173,7 @@
               <span>小<br />時</span>
               <p class="bg-dark px-3 mb-0 mx-2 font-audi">0</p>
               <span>分<br />鐘</span>
-              <p class="bg-dark px-3 mb-0 mx-2 font-audi">56</p>
+              <p class="bg-dark px-3 mb-0 mx-2 font-audi count-down">56</p>
               <span>秒</span>
             </div>
           </div>
@@ -1493,7 +1493,7 @@
             />
           </div>
         </div>
-        <div class="row justify-content-center">
+        <div class="row justify-content-center" data-tabs>
           <div class="col-10 col-md-12 w-sm-100">
             <ul
               class="category list-group list-group-horizontal-sm justify-content-center text-nowrap mt-3"
@@ -1506,7 +1506,7 @@
                   class="img-fluid"
                   alt=""
                 />
-                <button class="btn mb-0 fw-bold ms-3 ms-xl-6 btn-question text-primary border-0 stretched-link" data-name="common">
+                <button class="btn mb-0 fw-bold ms-2 ms-xl-6 btn-question text-primary border-0 stretched-link" data-tab="common">
                   常見<br class="d-none d-sm-block d-md-none" />問題
                 </button>
               </li>
@@ -1518,7 +1518,7 @@
                   class="img-fluid"
                   alt=""
                 />
-                <button class="btn mb-0 fw-bold ms-3 ms-xl-6 btn-question border-0 stretched-link" data-name="ui">UI 設計師</button>
+                <button class="btn mb-0 fw-bold ms-2 ms-xl-6 btn-question border-0 stretched-link" data-tab="ui">UI 設計師</button>
               </li>
               <li
                 class="list-group-item d-flex align-items-center justify-content-center rounded-0 position-relative"
@@ -1528,7 +1528,7 @@
                   class="img-fluid"
                   alt=""
                 />
-                <button class="btn mb-0 fw-bold ms-3 ms-xl-6 btn-question border-0 stretched-link" data-name="front-end">前端工程師</button>
+                <button class="btn mb-0 fw-bold ms-2 ms-xl-6 btn-question border-0 stretched-link" data-tab="frontend">前端工程師</button>
               </li>
               <li
                 class="list-group-item d-flex align-items-center justify-content-center rounded-0 position-relative"
@@ -1538,12 +1538,12 @@
                   class="img-fluid"
                   alt=""
                 />
-                <button class="btn mb-0 fw-bold ms-3 ms-xl-6 btn-question border-0 stretched-link" data-name="team">團體組</button>
+                <button class="btn mb-0 fw-bold ms-2 ms-xl-6 btn-question border-0 stretched-link"  data-tab="team">團體組</button>
               </li>
             </ul>
           </div>
           <!-- 常見問題手風琴 -->
-          <div class="col-10 col-md-12 common-question-area w-sm-100">
+          <div class="col-10 col-md-12 w-sm-100 accordion-content accordion-content__active" data-accordion-content="common">
             <div
               class="accordion accordion-flush"
               id="accordion-common-questions"
@@ -1644,7 +1644,7 @@
           </div>
 
           <!-- UI 設計師手風琴 -->
-          <div class="col-10 col-md-12 ui-question-area w-sm-100">
+          <div class="col-10 col-md-12 w-sm-100 accordion-content" data-accordion-content="ui">
             <div
               class="accordion accordion-flush"
               id="accordion-ui-questions"
@@ -1747,7 +1747,7 @@
           </div>
 
           <!--前端工程師手風琴 -->
-          <div class="col-10 col-md-12 frontend-question-area w-sm-100">
+          <div class="col-10 col-md-12 w-sm-100 accordion-content" data-accordion-content="frontend">
             <div
               class="accordion accordion-flush"
               id="accordion-frontend-questions"
@@ -1849,7 +1849,7 @@
           </div>
 
           <!--團體組手風琴 -->
-          <div class="col-10 col-md-12 team-question-area w-sm-100">
+          <div class="col-10 col-md-12 w-sm-100 accordion-content" data-accordion-content="team">
             <div
               class="accordion accordion-flush"
               id="accordion-team-questions"
