@@ -1,54 +1,49 @@
 import './assets/scss/all.scss';
 import 'bootstrap/dist/js/bootstrap.esm.js';
 
-const categoryBtn = [...document.querySelectorAll('.category .btn-question')]
-const commonQuestionArea = document.querySelector('.common-question-area');
-const uiQuestionArea = document.querySelector('.ui-question-area');
-const frontendQuestionArea = document.querySelector('.frontend-question-area');
-const teamQuestionArea = document.querySelector('.team-question-area');
+const countDown = document.querySelector('.count-down');
+let timer;
+
+function startTimer() {
+  let number = 60;
+  timer = setInterval(() => {
+    number--
+    if(number <= 54) {
+      number = 54
+      clearInterval(timer)
+      startTimer()
+    }
+    countDown.innerText = number
+  },1000)
+}
+
+startTimer()
 
 
-categoryBtn.forEach( btn =>{
-  btn.addEventListener('click', (e)=>{
-    categoryBtn.forEach(item =>{
-      item.classList.remove('text-primary')
-      item.parentElement.classList.remove('bg-dark')
+const categoryBtn = [...document.querySelectorAll('.category .btn-question')];
+categoryBtn.forEach(btn => {
+  btn.addEventListener('click',(e)=> {
+  
+    categoryBtn.forEach(btn => {
+      btn.classList.remove('text-primary');
+      btn.parentElement.classList.remove('bg-dark');
     })
-
     e.target.classList.add('text-primary');
     e.target.parentElement.classList.add('bg-dark');
 
-    if(e.target.dataset.name == 'common'){
-      hideAccordion();
-      commonQuestionArea.style.display = 'block';
-    } else if (e.target.dataset.name == 'ui') {
-      hideAccordion();
-      uiQuestionArea.style.display = 'block';
-    } else if (e.target.dataset.name == 'front-end'){
-      hideAccordion();
-      frontendQuestionArea.style.display = 'block';
-    } else if (e.target.dataset.name == 'team') {
-      hideAccordion();
-      teamQuestionArea.style.display = 'block';
-    }
+    switchAccordion(e.target.getAttribute('data-tab'));
   })
 })
 
-function initAccordion(){
-  uiQuestionArea.style.display = 'none';
-  frontendQuestionArea.style.display = 'none';
-  teamQuestionArea.style.display = 'none';
+function switchAccordion(targetTab){
+  const accordionTabContent = [...document.querySelectorAll('[data-accordion-content]')];
+  accordionTabContent.forEach(tabItem => {
+    tabItem.classList.remove('accordion-content__active');
+    if(tabItem.getAttribute('data-accordion-content') === targetTab) {
+      tabItem.classList.toggle('accordion-content__active');
+    }
+  })
 }
-
-initAccordion();
-
-function hideAccordion() {
-  commonQuestionArea.style.display = 'none';
-  uiQuestionArea.style.display = 'none';
-  frontendQuestionArea.style.display = 'none';
-  teamQuestionArea.style.display = 'none';
-}
-
 
 if (module.hot) {
   module.hot.accept();

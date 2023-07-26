@@ -58,6 +58,13 @@
         }
       }
     }
+    
+  }
+  .accordion-content {
+    display: none;
+  }
+  .accordion-content__active {
+    display: block;
   }
 
   .cooperation {
