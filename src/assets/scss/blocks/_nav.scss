@@ -1,5 +1,5 @@
 nav ul {
-  .nav-btn {
+  .btn.nav-btn {
     &:hover {
       background-color: $secondary;
     }
@@ -7,7 +7,7 @@ nav ul {
       background-color:  $secondary;
     }
   }
-  .register-btn {
+  .btn.register-btn {
     background-color: $primary;
     &:active {
       background-color: $secondary;
