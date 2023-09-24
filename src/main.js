@@ -1,48 +1,60 @@
 import './assets/scss/all.scss';
 import 'bootstrap/dist/js/bootstrap.esm.js';
 
+// 漢堡選單按鈕
+const hamburgerBtn = document.querySelector('.navbar-btn');
+const allHamburgerLines = [...document.querySelectorAll('.hamburger-line')];
+
+hamburgerBtn.addEventListener('click', switchHamburger);
+
+function switchHamburger() {
+  allHamburgerLines.forEach((item) => {
+    item.classList.toggle('active');
+  });
+}
+
 const countDown = document.querySelector('.count-down');
 let timer;
 
 function startTimer() {
   let number = 60;
   timer = setInterval(() => {
-    number--
-    if(number <= 54) {
-      number = 54
-      clearInterval(timer)
-      startTimer()
+    number--;
+    if (number <= 54) {
+      number = 54;
+      clearInterval(timer);
+      startTimer();
     }
-    countDown.innerText = number
-  },1000)
+    countDown.innerText = number;
+  }, 1000);
 }
 
-startTimer()
-
+startTimer();
 
 const categoryBtn = [...document.querySelectorAll('.category .btn-question')];
-categoryBtn.forEach(btn => {
-  btn.addEventListener('click',(e)=> {
-  
-    categoryBtn.forEach(btn => {
+categoryBtn.forEach((btn) => {
+  btn.addEventListener('click', (e) => {
+    categoryBtn.forEach((btn) => {
       btn.classList.remove('text-primary');
       btn.parentElement.classList.remove('bg-dark');
-    })
+    });
     e.target.classList.add('text-primary');
     e.target.parentElement.classList.add('bg-dark');
 
     switchAccordion(e.target.getAttribute('data-tab'));
-  })
-})
+  });
+});
 
-function switchAccordion(targetTab){
-  const accordionTabContent = [...document.querySelectorAll('[data-accordion-content]')];
-  accordionTabContent.forEach(tabItem => {
+function switchAccordion(targetTab) {
+  const accordionTabContent = [
+    ...document.querySelectorAll('[data-accordion-content]'),
+  ];
+  accordionTabContent.forEach((tabItem) => {
     tabItem.classList.remove('accordion-content__active');
-    if(tabItem.getAttribute('data-accordion-content') === targetTab) {
+    if (tabItem.getAttribute('data-accordion-content') === targetTab) {
       tabItem.classList.toggle('accordion-content__active');
     }
-  })
+  });
 }
 
 if (module.hot) {
