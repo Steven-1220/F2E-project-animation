@@ -1,8 +1,8 @@
-# The F2E 一頁式式互動網站
+# The F2E 一頁式互動網站
 
 ## 簡介
 
-> The F2E一頁式式互動網站，主要使用 webpack 5 建立並搭配 Bootstrap 5 和 GSAP、AOS 網頁動畫套件完成
+> The F2E一頁式互動網站，主要使用 webpack 5 建立並搭配 Bootstrap 5 和 GSAP、AOS 網頁動畫套件完成
 
 ## 網址 
 
